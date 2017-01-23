@@ -44,6 +44,20 @@ export S3CREDS_URL=https://geobigdata.io/s3creds/v1/prefix
 python application.py
 ```
 
+Deployment:
+----
+
+To deploy to AWS Elastic Beanstalk:
+
+Create a zipfile containing:
+
+* application.py
+* the lister directory & its contents
+* the Dockerfile
+* requirements.txt
+
+Then upload to beanstalk.
+
 TODO:
 ----
 - Make it work in Safari
@@ -56,3 +70,4 @@ TODO:
 - bad password (or other error) returns 500.   It should popup at you.
 - ~~Enable Delete~~
 - ~~Enable HTTPS~~ (can put behind an https proxy)
+
